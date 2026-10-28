@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
 """Tests de cohérence documentaire minimale.
 
 Pas des tests fonctionnels du pont, mais un garde-fou pour éviter qu'un

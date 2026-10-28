@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
 """Tests du keepalive HEP périodique (`keepalive.py`) :
 
 - structure du paquet keepalive (chunk KEEPALIVE_TIMER + payload JSON)

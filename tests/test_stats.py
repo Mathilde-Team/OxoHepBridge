@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
 """Tests du module d'observabilité Stats : compteurs, taux de succès,
 journalisation de synthèse, et intégration dans Bridge (erreurs d'envoi
 capturées sans crash)."""

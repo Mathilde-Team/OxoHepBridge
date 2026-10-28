@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
 """Notification systemd (sd_notify) : READY=1, WATCHDOG=1, STOPPING=1.
 
 `systemctl status` ne sait pas, par défaut, distinguer un pont qui tourne

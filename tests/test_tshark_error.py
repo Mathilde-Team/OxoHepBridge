@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
 """Tests de gestion d'erreur du subprocess tshark : code de sortie non nul
 doit lever TsharkError, plutôt que d'être ignoré silencieusement."""
 

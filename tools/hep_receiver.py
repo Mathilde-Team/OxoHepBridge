@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
 """Harnais de réception HEPv3 standalone.
 
 Écoute sur un port UDP, décode chaque paquet HEPv3 reçu avec la même fonction

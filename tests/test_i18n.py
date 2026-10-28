@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
 """Internationalisation gettext (issue #50).
 
 Trois familles de garde-fous :

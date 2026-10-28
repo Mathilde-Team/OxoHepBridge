@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# SPDX-License-Identifier: GPL-3.0-or-later
 # install.sh — bootstrap de l'environnement de développement oxo-hep-bridge
 #
 # Couvre le maximum de dépendances système via le gestionnaire de paquets natif :

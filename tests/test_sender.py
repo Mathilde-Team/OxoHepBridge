@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
 """Tests de la couche d'envoi (`sender.py`).
 
 Couvre la résolution de la famille de socket (`AF_INET` vs `AF_INET6`) pour

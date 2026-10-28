@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
 """Tests de la priorité de résolution de config au niveau du CLI :
 les arguments CLI ne doivent écraser les valeurs TOML/env QUE s'ils sont
 explicitement fournis par l'utilisateur (sinon les défauts d'argparse
