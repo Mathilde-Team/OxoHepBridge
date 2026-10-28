@@ -67,7 +67,7 @@ le décode avec `tshark -T ek`, normalise les champs, les encapsule en **HEPv3**
 - Tests automatisés sur les fixtures issues des captures officielles Wireshark.
 - CI durcie : `ruff check`/`ruff format`, contrôle de type statique (`mypy`,
   périmètre `src/oxo_hep_bridge` + `tools/`) et seuil de couverture minimal
-  (`--cov-fail-under=95`) sur chaque push/PR.
+  (95 % lignes + branches, `fail_under` de `pyproject.toml`) sur chaque push/PR.
 
 ## Installation
 

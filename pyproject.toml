@@ -91,3 +91,10 @@ pythonpath = ["src", "."]
 [tool.coverage.run]
 source = ["oxo_hep_bridge"]
 branch = true
+
+[tool.coverage.report]
+# Seuil bloquant de l'équipe (Mathilde-Team/.github#9, issue #62) : lignes +
+# branches. Déclaré ici seulement : `pytest --cov` le lit dans la CI comme
+# dans `make test-cov` (cohérence vérifiée par tests/test_ci_config.py).
+fail_under = 95
+show_missing = true

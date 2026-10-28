@@ -487,8 +487,9 @@ avant. `Bridge.run()` appelle donc `self.sender.close()` et lit
 est inchangé (un no-op reste un no-op), mais le point d'appel n'a plus
 besoin de connaître dynamiquement les sous-classes concrètes de `Sender`.
 
-Seuil de couverture minimal (`--cov-fail-under=80`, appliqué à la fois par
-la CI et par `make test-cov`) en complément : un plancher pour repérer une
+Seuil de couverture minimal (95 % lignes + branches depuis l'issue #62,
+déclaré une seule fois dans `[tool.coverage.report] fail_under` de
+`pyproject.toml` et lu par la CI comme par `make test-cov`) en complément : un plancher pour repérer une
 régression de couverture (code ajouté sans test associé), pas un objectif à
 atteindre — la suite existante (213+ tests avant ce durcissement) couvre
 déjà large marge au-delà de ce seuil sur la plupart des modules.
@@ -524,7 +525,7 @@ Ce que uv change concrètement :
 - **CI** (`--locked`) : `uv sync --locked --extra dev` fait échouer le job
   si `uv.lock` n'est pas exactement synchronisé avec `pyproject.toml`,
   plutôt que de régénérer silencieusement le lock en CI — garde-fou
-  équivalent en esprit au seuil de couverture (`--cov-fail-under=80`) ou
+  équivalent en esprit au seuil de couverture (`fail_under = 95`) ou
   au contrôle de type (`disallow_untyped_defs`) déjà en place : une
   dérive doit faire échouer la CI, pas être absorbée silencieusement.
 
