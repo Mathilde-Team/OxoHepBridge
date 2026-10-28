@@ -82,7 +82,7 @@ def _send_with_retry(
                     attempt + 1,
                     exc,
                 )
-                return False, used
+                continue  # dernière tentative : la boucle se termine
             logger.warning(
                 _(
                     "Échec d'envoi HEP vers {}:{}{} (tentative {}/{}), nouvel essai dans {:.2f}s : {}"
@@ -98,8 +98,9 @@ def _send_with_retry(
         else:
             logger.debug("_send_with_retry() retourne | True après {} tentative(s)", used + 1)
             return True, used
-    logger.debug("_send_with_retry() retourne | False (garde de type)")
-    return False, used  # inatteignable (la boucle retourne toujours), garde de type
+    # Atteint quand la dernière tentative a échoué (boucle épuisée).
+    logger.debug("_send_with_retry() retourne | False après {} tentative(s)", used + 1)
+    return False, used
 
 
 def _resolve_destination(
