@@ -51,7 +51,7 @@ docs/architecture.md#gestion-des-dépendances-et-de-lenvironnement-uv) :
 ```bash
 make install    # uv sync --extra dev (venv + deps dev) + pre-commit
 make test       # uv run pytest
-make test-cov   # uv run pytest + couverture (échoue sous 80 %, comme la CI)
+make test-cov   # uv run pytest + couverture (échoue sous 95 %, comme la CI)
 make lint       # uv run ruff check + ruff format --check
 make typecheck  # uv run mypy (src/oxo_hep_bridge + tools/, PAS tests/ —
                 # volontaire, voir docs/architecture.md#contrôle-de-type-statique-mypy)
