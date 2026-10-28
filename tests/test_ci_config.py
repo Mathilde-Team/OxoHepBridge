@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
 """Tests de cohérence du outillage CI (mypy + seuil de couverture).
 
 Pas des tests fonctionnels du pont : un garde-fou pour éviter qu'une future

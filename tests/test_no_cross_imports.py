@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
 """Garde-fou : le graphe des imports internes de `src/oxo_hep_bridge/` doit
 rester acyclique.
 

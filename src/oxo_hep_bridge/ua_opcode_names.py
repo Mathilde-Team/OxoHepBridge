@@ -1,4 +1,15 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+# Tables dérivées des dissecteurs Wireshark packet-uaudp.c, packet-noe.c et
+# packet-ua3g.c (SPDX-License-Identifier: GPL-2.0-or-later), dont les
+# mentions de copyright sont conservées :
+#   Copyright 2012, Alcatel-Lucent Enterprise <lars.ruoff@alcatel-lucent.com>
+#   Copyright 2017-2018, Alcatel-Lucent Enterprise <nicolas.bertin@al-enterprise.com>
+#   Wireshark - Network traffic analyzer, by Gerald Combs <gerald@wireshark.org>,
+#   Copyright 1998 Gerald Combs
+# La clause « or later » de la GPL-2.0 permet leur redistribution sous
+# GPL-3.0-or-later avec le reste du projet.
 """Dictionnaires de noms officiels UAUDP/NOE, sourcés depuis le dissecteur
 Wireshark ``packet-uaudp.c`` / ``packet-noe.c`` (Alcatel-Lucent Enterprise,
 Lars Ruoff <lars.ruoff@alcatel-lucent.com>, upstream Wireshark, licence

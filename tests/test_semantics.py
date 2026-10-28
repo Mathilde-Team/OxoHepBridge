@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
 """Tests unitaires de semantics.py — construction/sérialisation de la
 payload sémantique. Complète les tests d'intégration sur fixtures pcap
 réelles (ci-dessous, pour ``ua3g``) par des cas synthétiques ciblant les cas

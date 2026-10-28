@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
 """Fixtures partagées : un fake de subprocess.Popen pour tshark -T ek."""
 
 from __future__ import annotations

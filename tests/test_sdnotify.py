@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
 """Tests du module sd_notify (`sdnotify.py`) :
 
 - `SdNotifier` : no-op silencieux sans `NOTIFY_SOCKET`, envoi effectif d'un

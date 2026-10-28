@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
 """Tests de cohérence documentaire minimale.
 
 Pas des tests fonctionnels du pont, mais un garde-fou pour éviter qu'un
@@ -59,9 +60,9 @@ def test_ua3g_call_signaling_doc_exists():
     dépôt doit être lié depuis le README/architecture.md, pas laissé
     orphelin »)."""
     doc = REPO_ROOT / "docs" / "ua3g-call-signaling-decroche-numerotation.md"
-    assert doc.exists(), (
-        "docs/ua3g-call-signaling-decroche-numerotation.md est référencé ailleurs mais absent"
-    )
+    assert (
+        doc.exists()
+    ), "docs/ua3g-call-signaling-decroche-numerotation.md est référencé ailleurs mais absent"
     content = doc.read_text(encoding="utf-8")
     assert "## 5. Commande à utiliser sur une vraie capture d'appel" in content
 

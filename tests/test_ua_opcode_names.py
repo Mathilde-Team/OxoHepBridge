@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
 """Tests des dictionnaires de noms officiels UAUDP/NOE
 (``oxo_hep_bridge.ua_opcode_names``) et de leur intégration dans la payload
 sémantique (``semantics.annotate_noe_event`` / ``build_semantic_payload``).

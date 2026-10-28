@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
 """Extraction sémantique des champs UAUDP/UA3G observés dans les captures.
 
 Contrairement à l'ancien déversement brut du contenu tshark aplati, ce module

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
 """Outillage gettext de oxo-hep-bridge (issue #50).
 
 Sous-commandes (``uv run python tools/i18n.py <commande>``) :

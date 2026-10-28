@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
 """Fonctions utilitaires partagées pour l'extraction de champs depuis les
 paquets tshark -T ek aplatis (flat dict). Utilisées à la fois par
 ``normalizer.py`` et ``semantics.py``.

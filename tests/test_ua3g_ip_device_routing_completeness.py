@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
 """Garde-fou de complétude — nommage IP Device Routing (opcode UA3G 0x13).
 
 Contexte (session 38) : en creusant le candidat 0x14 "Application

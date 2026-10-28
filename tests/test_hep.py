@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
 """Tests de l'encodeur/décodeur HEPv3 (hep.py).
 
 Validation contre la spec HEP3 rev12 et l'implémentation de référence

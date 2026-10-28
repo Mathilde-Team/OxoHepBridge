@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
 """Garde-fou sur l'archive de livraison (`tools/package.py`, `make package`).
 
 `.github/workflows/ci.yml` a disparu à plusieurs reprises d'archives de

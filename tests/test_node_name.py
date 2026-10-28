@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
 """Tests du chunk node_name (0x0013) : présent si node_name est positionné,
 absent sinon. Comme pour auth_key, on valide via decode() plutôt que par
 recherche d'octets bruts."""

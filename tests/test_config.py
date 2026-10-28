@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
 """Tests de la configuration (config.py) : priorité CLI > env > TOML > défauts,
 chargement du fichier TOML, non-écrasement par des variables absentes."""
 

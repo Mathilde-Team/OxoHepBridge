@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
 """Configuration de oxo-hep-bridge.
 
 Priorité de résolution (la plus forte gagne) :

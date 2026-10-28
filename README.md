@@ -393,4 +393,13 @@ dans [docs/architecture.md](docs/architecture.md#notification-systemd-sd_notify-
 
 ## Licence
 
-MIT — voir [LICENSE](LICENSE).
+GNU GPL v3.0 ou ultérieure (`GPL-3.0-or-later`) — voir [LICENSE](LICENSE).
+Chaque fichier source porte l'en-tête `SPDX-License-Identifier: GPL-3.0-or-later`.
+
+Code tiers : les tables de `src/oxo_hep_bridge/ua_opcode_names.py` sont
+dérivées des dissecteurs Wireshark `packet-uaudp.c`, `packet-noe.c` et
+`packet-ua3g.c` (GPL-2.0-or-later, © Alcatel-Lucent Enterprise et Gerald
+Combs) ; leurs mentions de copyright sont conservées en tête du fichier.
+
+Dépendances : `loguru` (MIT) ; `tshark` (Wireshark, GPL-2.0-or-later) est
+appelé comme programme externe, sans être redistribué.

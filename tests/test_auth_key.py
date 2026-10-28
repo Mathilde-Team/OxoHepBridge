@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
 """Tests du chunk auth_key (0x000E) : présent si auth_key est positionné,
 absent sinon. Vérifie la conformité avec HEP3 rev12 / heplify-server."""
 

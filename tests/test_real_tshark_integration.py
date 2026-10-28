@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
 """Bout en bout avec un vrai binaire tshark (pas `FakePopen`).
 
 Contexte (session 24) : `docs/roadmap.md` § « À faire » est vide depuis

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
 """Normalisation des champs UAUDP/UA3G/NOE décodés (via tshark -T ek) vers un
 HepPacket prêt à encoder.
 
