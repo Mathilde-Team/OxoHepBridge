@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
 """Compteurs d'exécution et journalisation de synthèse de fin de run.
 
 Statistiques minimales et testables — Pas de dépendance externe autre que

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
 """Keepalive HEP périodique.
 
 Sur une capture live, du trafic OXO peut manquer pendant de longues périodes

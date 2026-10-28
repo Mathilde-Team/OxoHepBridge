@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
 """Source de paquets décodés via tshark -T ek (Elasticsearch Bulk NDJSON).
 
 Pas de pyshark, pas de scapy : on invoque directement le binaire tshark en

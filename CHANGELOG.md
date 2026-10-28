@@ -13,6 +13,9 @@ Les versions publiées sont datées « ## [X.Y.Z] - AAAA-MM-JJ » ; les entrées
 
 ## [Non publié]
 
+### Modifié
+- Licence passée de MIT à GPL-3.0-or-later : texte officiel dans `LICENSE`, `pyproject.toml` (PEP 639), en-têtes SPDX dans `src/`, `tools/`, `scripts/`, `tests/`, copyrights Wireshark conservés dans `ua_opcode_names.py`, section Licence du README (#75).
+
 ### Ajouté
 - Règles de protection versionnées `.github/branch-protection/{main,dev}.json` (relevées sur la protection réelle du 22/10/2026), vérifiées par le workflow `branch-protection.yml` (push sur main/dev, chaque jour) et `scripts/check_branch_protection.py` (socle Mathilde-Team/.github#1, #71).
 
@@ -427,4 +430,3 @@ Documentation exploratoire NOE/UA3G ↔ SIP/HOMER (`docs/noe-ua3g-homer-mapping.
 Version `0.1.0` initiale : encodeur/décodeur HEPv3 pur Python, source `tshark -T ek`, normaliseur UAUDP/UA3G/NOE, mode live/pcap, 33 tests. Puis dans la foulée : payload sémantique structuré, corrélation stateless canonicalisée, `stats.py`, harnais `tools/hep_receiver.py` (60 tests) ; puis keepalive HEP périodique (69 tests).
 
 → [Détail complet](docs/sessions/session-01.md)
-

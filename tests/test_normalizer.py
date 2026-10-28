@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
 """Tests du normaliseur (normalizer.py) : tolérance aux champs manquants,
 extraction multi-NOE, corrélations."""
 

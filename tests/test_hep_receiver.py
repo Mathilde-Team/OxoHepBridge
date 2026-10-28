@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
 """Tests du harnais de réception HEPv3 standalone (tools/hep_receiver.py).
 
 Valide en particulier la décompression du chunk COMPRESSED_PAYLOAD (0x0010,

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
 """Construit l'archive de livraison horodatée du dépôt.
 
 Utilisé par `make package` (voir Makefile) et exercé directement par

@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=68", "wheel"]
+requires = ["setuptools>=77", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -8,7 +8,8 @@ version = "0.1.0"
 description = "Pont Alcatel OXO (UA/UAUDP/UA3G/NOE) vers HOMER via tshark -T ek + HEP/EEP"
 readme = "README.md"
 requires-python = ">=3.11"
-license = { text = "MIT" }
+license = "GPL-3.0-or-later"
+license-files = ["LICENSE"]
 authors = [{ name = "yves deuscher" }]
 dependencies = ["loguru>=0.7"]
 
@@ -90,3 +91,10 @@ pythonpath = ["src", "."]
 [tool.coverage.run]
 source = ["oxo_hep_bridge"]
 branch = true
+
+[tool.coverage.report]
+# Seuil bloquant de l'équipe (Mathilde-Team/.github#9, issue #62) : lignes +
+# branches. Déclaré ici seulement : `pytest --cov` le lit dans la CI comme
+# dans `make test-cov` (cohérence vérifiée par tests/test_ci_config.py).
+fail_under = 95
+show_missing = true

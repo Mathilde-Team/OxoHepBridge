@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
 """Encodeur/décodeur HEPv3 (Homer Encapsulation Protocol v3) — implémentation pure
 Python, sans dépendance externe.
 

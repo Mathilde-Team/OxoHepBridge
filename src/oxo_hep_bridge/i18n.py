@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
 """Internationalisation (GNU gettext) de oxo-hep-bridge — issue #50.
 
 Les chaînes destinées à l'utilisateur (aide argparse, messages de journal,

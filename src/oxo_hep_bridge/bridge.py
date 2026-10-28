@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
 """Bridge : orchestre source (tshark -T ek) -> normaliseur -> encodeur HEP -> sender."""
 
 from __future__ import annotations

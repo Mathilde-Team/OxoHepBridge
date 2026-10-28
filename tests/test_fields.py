@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
 """Tests unitaires de fields.py — fonctions utilitaires partagées par
 normalizer.py/semantics.py, jusqu'ici seulement exercées indirectement via
 ces deux modules (fixtures pcap réelles). Ce fichier cible spécifiquement les

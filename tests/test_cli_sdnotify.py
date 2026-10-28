@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
 """Tests de l'intégration sd_notify dans `cli.main()`.
 
 Contexte : `cli.main()` doit signaler `READY=1` une fois la configuration

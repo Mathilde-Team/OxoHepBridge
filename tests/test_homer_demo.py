@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
 """Stack HOMER7 de démonstration (deploy/homer/compose.yml, issue #47)."""
 
 from __future__ import annotations

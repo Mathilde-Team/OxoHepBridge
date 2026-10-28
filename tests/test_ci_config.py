@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
 """Tests de cohérence du outillage CI (mypy + seuil de couverture).
 
 Pas des tests fonctionnels du pont : un garde-fou pour éviter qu'une future
@@ -45,28 +46,25 @@ def test_ci_runs_mypy():
 
 def test_ci_enforces_a_coverage_threshold():
     """La CI doit faire échouer le job si la couverture retombe sous un
-    seuil minimal — pas seulement afficher le pourcentage."""
-    workflow = _ci_workflow_text()
-    assert "--cov-fail-under=" in workflow
+    seuil minimal — pas seulement afficher le pourcentage. Depuis l'issue #62,
+    le seuil (95 %, lignes + branches) est déclaré une seule fois dans
+    `[tool.coverage.report] fail_under`, que `pytest --cov` applique."""
+    coverage = _pyproject()["tool"]["coverage"]
+    assert coverage["run"]["branch"] is True
+    assert coverage["report"]["fail_under"] >= 95
+    assert "pytest --cov=" in _ci_workflow_text()
 
 
 def test_ci_and_makefile_use_the_same_coverage_threshold():
     """Le seuil de couverture de la CI (`ci.yml`) et celui de la commande de
-    développement (`make test-cov`) ne doivent pas diverger silencieusement —
-    sans quoi un dev verrait `make test-cov` passer localement puis la CI
-    échouer (ou l'inverse) sur le même seuil supposé identique."""
+    développement (`make test-cov`) ne doivent pas diverger silencieusement :
+    aucun des deux ne le recopie (`--cov-fail-under`), les deux lisent la
+    seule déclaration de `pyproject.toml`."""
     workflow = _ci_workflow_text()
     makefile = (REPO_ROOT / "Makefile").read_text(encoding="utf-8")
-
-    def _extract_threshold(text: str) -> str:
-        marker = "--cov-fail-under="
-        start = text.index(marker) + len(marker)
-        end = start
-        while end < len(text) and (text[end].isdigit() or text[end] == "."):
-            end += 1
-        return text[start:end]
-
-    assert _extract_threshold(workflow) == _extract_threshold(makefile)
+    for texte in (workflow, makefile):
+        assert "--cov-fail-under" not in texte
+        assert "--cov=oxo_hep_bridge" in texte
 
 
 def test_mypy_config_present_and_scoped_to_typed_code():

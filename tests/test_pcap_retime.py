@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
 """--pcap-retime (issue #47) : relecture d'une capture ancienne vers HOMER7.
 
 heplify-server + PostgreSQL range chaque paquet dans une partition datée ;
