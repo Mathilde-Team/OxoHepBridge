@@ -13,6 +13,10 @@ Les versions publiées sont datées « ## [X.Y.Z] - AAAA-MM-JJ » ; les entrées
 
 ## [Non publié]
 
+- CI et publication : repli GitHub autorisé, publication manuelle sur un tag
+  déjà livré dans main, vérification d’ascendance et archives du tag exact.
+
+
 ### Modifié
 - Licence passée de MIT à GPL-3.0-or-later : texte officiel dans `LICENSE`, `pyproject.toml` (PEP 639), en-têtes SPDX dans `src/`, `tools/`, `scripts/`, `tests/`, copyrights Wireshark conservés dans `ua_opcode_names.py`, section Licence du README (#75).
 
