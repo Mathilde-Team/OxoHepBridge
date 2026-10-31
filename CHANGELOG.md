@@ -13,6 +13,9 @@ Les versions publiées sont datées « ## [X.Y.Z] - AAAA-MM-JJ » ; les entrées
 
 ## [Non publié]
 
+- CI gettext : même repli GitHub que les checks requis, sans modifier les
+  contrôles de synchronisation, les traductions ni les permissions (#85).
+
 - CI et publication : repli GitHub autorisé, publication manuelle sur un tag
   déjà livré dans main, vérification d’ascendance et archives du tag exact.
 

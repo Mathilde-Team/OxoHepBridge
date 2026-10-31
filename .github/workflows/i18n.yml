@@ -24,7 +24,7 @@ permissions:
 jobs:
   catalogues:
     name: Catalogues gettext (synchronisation + rapport)
-    runs-on: ${{ fromJSON(vars.RUNS_ON_LINUX || '{"group":"maison","labels":["self-hosted","linux"]}') }}
+    runs-on: ${{ fromJSON(vars.RUNS_ON_LINUX || '"ubuntu-latest"') }}
 
     steps:
       - name: Checkout du dépôt
@@ -54,7 +54,7 @@ jobs:
   pr-mise-a-jour:
     name: PR de mise à jour des catalogues (manuel)
     if: github.event_name == 'workflow_dispatch' && inputs.ouvrir_pr
-    runs-on: ${{ fromJSON(vars.RUNS_ON_LINUX || '{"group":"maison","labels":["self-hosted","linux"]}') }}
+    runs-on: ${{ fromJSON(vars.RUNS_ON_LINUX || '"ubuntu-latest"') }}
     permissions:
       contents: write
       pull-requests: write
