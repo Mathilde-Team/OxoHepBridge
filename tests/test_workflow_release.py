@@ -43,9 +43,7 @@ class PublicationSurTag(unittest.TestCase):
         self.assertIn('!= "dev"', garde)
         ci = (self.workflows / "ci.yml").read_text(encoding="utf-8")
         regle = json.loads(
-            (self.workflows.parent / "branch-protection" / "dev.json").read_text(
-                encoding="utf-8"
-            )
+            (self.workflows.parent / "branch-protection" / "dev.json").read_text(encoding="utf-8")
         )["required_status_checks"]
         contextes = [check["context"] for check in regle.get("checks", [])]
         contextes.extend(regle.get("contexts", []))
