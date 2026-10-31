@@ -25,7 +25,7 @@ class PublicationSurTag(unittest.TestCase):
         self.assertIn("          fail_on_unmatched_files: true", texte)
 
     def test_repli_github_et_garde_main_conserves(self):
-        for nom in ("ci.yml", "guard-main.yml", "release.yml"):
+        for nom in ("ci.yml", "guard-main.yml", "release.yml", "i18n.yml"):
             texte = (self.workflows / nom).read_text(encoding="utf-8")
             repli = "fromJSON(vars.RUNS_ON_LINUX || '\"ubuntu-latest\"')"
             direct = any(
